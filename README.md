@@ -3,6 +3,7 @@
 
 We are a costa rican company.
 
+
 ## VISION
 
 To offer international level competitive business and scientific informatic and telematic services with providers of top global quality, to give our clients an optimal entrepreneurial enviroment and a technological infrastructure to potentiate their objects to highest scale.
