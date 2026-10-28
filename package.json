@@ -1,0 +1,30 @@
+{
+  "name": "psideralis-website",
+  "version": "1.0.0",
+  "description": "Psideralis Website - Node.js Express SPA with Webpack",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "node server.js",
+    "dev": "concurrently \"webpack --mode=development --watch\" \"nodemon server.js\""
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.6.0",
+    "nodemon": "^3.0.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "keywords": [
+    "express",
+    "webpack",
+    "spa"
+  ],
+  "author": "",
+  "license": "MIT"
+}

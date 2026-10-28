@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Psideralis: ingeniería de software, arquitectura cloud y productos digitales." />
+  <title>Psideralis — Ingeniería de Software</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark';</script>
+</head>
+
+<body>
+  <div class="background-grid"></div>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a href="/" class="logo" data-route="home" aria-label="Psideralis inicio"><span
+        class="logo-symbol"><i></i><i></i><i></i></span><span>Psi<span>deralis</span></span></a>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#inicio" data-i18n="nav.home">Inicio</a><a href="#servicios" data-i18n="nav.services">Servicios</a><a
+        href="#proceso" data-i18n="nav.process">Proceso</a><a href="#casos" data-i18n="nav.cases">Casos</a><a
+        href="#contacto" data-i18n="nav.contact">Contacto</a><a class="nav-store" href="/tienda"
+        data-route="store">Tienda <span>↗</span></a>
+    </nav>
+    <div class="header-actions">
+      <div class="language-selector" id="languageSelector"><button class="language-button" id="languageButton"
+          type="button" aria-haspopup="listbox" aria-expanded="false"><span id="languageCurrent">ES</span></button>
+        <ul class="language-dropdown" id="languageDropdown" role="listbox">
+          <li role="option" data-lang="es">Español</li>
+          <li role="option" data-lang="en">English</li>
+          <li role="option" data-lang="fr">Français</li>
+        </ul>
+      </div><button class="theme-button" id="themeToggle" aria-label="Cambiar tema"><span
+          class="theme-icon">◐</span></button><a href="#contacto" class="button button-small button-primary home-only"
+        data-i18n="header.cta_button">Hablemos</a><a href="/tienda" data-route="store" class="store-mini"
+        aria-label="Abrir tienda">⌑ <b id="miniCartCount">0</b></a><button class="menu-button" id="menuButton"
+        aria-label="Abrir menú"><i></i><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main id="homeView">
+    <section class="hero section" id="inicio">
+      <div class="hero-content reveal">
+        <div class="eyebrow" data-i18n="hero.eyebrow"><span class="status-dot"></span> Ingeniería digital para empresas
+          que avanzan</div>
+        <h1 data-i18n="hero.title">Convertimos ideas complejas en <span class="gradient-text">software
+            extraordinario.</span></h1>
+        <p class="hero-description" data-i18n="hero.description">Diseñamos y construimos productos digitales escalables,
+          plataformas cloud y soluciones inteligentes para acelerar el crecimiento de tu empresa.</p>
+        <div class="hero-buttons"><a href="#contacto" class="button button-primary"
+            data-i18n="hero.primary_button">Iniciar proyecto <span>→</span></a><a href="#servicios"
+            class="button button-secondary" data-i18n="hero.secondary_button">Explorar servicios</a></div>
+        <div class="hero-trust">
+          <div class="trust-avatars"><span>AG</span><span>LM</span><span>CP</span><span>+</span></div>
+          <div data-i18n="hero.trust_text"><strong>+40 proyectos entregados</strong><small>por equipos de alto
+              rendimiento</small></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="code-card glow-card">
+          <div class="window-bar"><i class="window-dot red"></i><i class="window-dot yellow"></i><i
+              class="window-dot green"></i><span class="window-title">psideralis.config</span></div>
+          <div class="code-content"><span
+              class="line-number">01</span><code><b>const</b> <em>future</em> = {</code><span
+              class="line-number">02</span><code
+              class="indent"><em>strategy</em>: <strong>'buildBetter'</strong>,</code><span
+              class="line-number">03</span><code class="indent"><em>quality</em>: <mark>100</mark>,</code><span
+              class="line-number">04</span><code
+              class="indent"><em>innovation</em>: <strong>'always'</strong></code><span
+              class="line-number">05</span><code>}</code>
+            <p class="terminal-line"><i></i> system.ready();</p>
+          </div>
+        </div>
+        <div class="floating-card floating-card-top"><span class="mini-icon">✦</span>
+          <div><strong>Escalable</strong><small>por diseño</small></div>
+        </div>
+        <div class="floating-card floating-card-bottom"><span class="mini-icon">↗</span>
+          <div><strong>+68%</strong><small>eficiencia operativa</small></div>
+        </div>
+      </div>
+    </section>
+    <section class="metrics section">
+      <div class="metric reveal" data-i18n="metrics.metric_1"><strong>8+</strong><span>años de experiencia</span></div>
+      <div class="metric reveal" data-i18n="metrics.metric_2"><strong>40+</strong><span>productos construidos</span>
+      </div>
+      <div class="metric reveal" data-i18n="metrics.metric_3"><strong>99.9%</strong><span>disponibilidad
+          operativa</span></div>
+      <div class="metric reveal" data-i18n="metrics.metric_4"><strong>12</strong><span>países con clientes</span></div>
+    </section>
+    <section class="section services-section" id="servicios">
+      <div class="section-heading reveal">
+        <div><span class="section-label" data-i18n="services.section_label">Qué hacemos</span>
+          <h2 data-i18n="services.title">Soluciones pensadas para <span class="gradient-text">crecer.</span></h2>
+        </div>
+        <p data-i18n="services.description">Combinamos estrategia, diseño y tecnología para resolver desafíos reales y
+          crear ventajas competitivas sostenibles.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card glow-card reveal"><span class="service-icon">⌘</span><small>01</small>
+          <h3 data-i18n="services.service_1.title">Desarrollo de productos</h3>
+          <p data-i18n="services.service_1.description">Convertimos tus ideas en productos digitales robustos,
+            intuitivos y preparados para evolucionar.</p><a href="#contacto" data-i18n="services.service_1.link">Conocer
+            más <span>→</span></a>
+        </article>
+        <article class="service-card glow-card reveal"><span class="service-icon">◈</span><small>02</small>
+          <h3 data-i18n="services.service_2.title">Arquitectura cloud</h3>
+          <p data-i18n="services.service_2.description">Diseñamos infraestructuras seguras, flexibles y eficientes para
+            tu crecimiento operativo.</p><a href="#contacto" data-i18n="services.service_2.link">Conocer más
+            <span>→</span></a>
+        </article>
+        <article class="service-card glow-card reveal"><span class="service-icon">⚙</span><small>03</small>
+          <h3 data-i18n="services.service_3.title">Automatización e IA</h3>
+          <p data-i18n="services.service_3.description">Automatizamos procesos para mejorar decisiones, tiempos y
+            resultados.</p><a href="#contacto" data-i18n="services.service_3.link">Conocer más <span>→</span></a>
+        </article>
+        <article class="service-card glow-card reveal"><span class="service-icon">↗</span><small>04</small>
+          <h3 data-i18n="services.service_4.title">Modernización tecnológica</h3>
+          <p data-i18n="services.service_4.description">Evolucionamos sistemas heredados hacia plataformas modernas y
+            mantenibles.</p><a href="#contacto" data-i18n="services.service_4.link">Conocer más <span>→</span></a>
+        </article>
+      </div>
+    </section>
+    <section class="section process-section" id="proceso">
+      <div class="section-heading centered reveal"><span class="section-label" data-i18n="process.section_label">Nuestro
+          proceso</span>
+        <h2 data-i18n="process.title">Del desafío a la <span class="gradient-text">solución.</span></h2>
+        <p data-i18n="process.description">Trabajamos de forma colaborativa, transparente y orientada a resultados
+          medibles.</p>
+      </div>
+      <div class="process-grid">
+        <article class="process-step reveal"><span>01</span>
+          <h3 data-i18n="process.step_1.title">Descubrir</h3>
+          <p data-i18n="process.step_1.description">Entendemos tu negocio, usuarios y objetivos prioritarios.</p>
+        </article>
+        <article class="process-step reveal"><span>02</span>
+          <h3 data-i18n="process.step_2.title">Diseñar</h3>
+          <p data-i18n="process.step_2.description">Definimos la experiencia, estrategia y arquitectura adecuada.</p>
+        </article>
+        <article class="process-step reveal"><span>03</span>
+          <h3 data-i18n="process.step_3.title">Construir</h3>
+          <p data-i18n="process.step_3.description">Desarrollamos con ciclos cortos y feedback continuo.</p>
+        </article>
+        <article class="process-step reveal"><span>04</span>
+          <h3 data-i18n="process.step_4.title">Escalar</h3>
+          <p data-i18n="process.step_4.description">Medimos, optimizamos y evolucionamos el producto.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section case-section" id="casos">
+      <div class="section-heading reveal">
+        <div><span class="section-label" data-i18n="cases.section_label">Caso conceptual</span>
+          <h2 data-i18n="cases.title">Más alcance. <span class="gradient-text">Más oportunidades.</span></h2>
+        </div>
+      </div>
+      <div class="case-study glow-card reveal">
+        <div class="case-info"><span class="case-tag" data-i18n="cases.case_tag">Escritorio / Web / Móvil</span>
+          <h3 data-i18n="cases.case_title">Un prototipo, tres formas de conectar.</h3>
+          <p data-i18n="cases.case_description">Un prototipo de aplicación multiplataforma pensado para llevar un
+            servicio digital a escritorio, web y móvil, ampliar su exposición y crear oportunidades de crecimiento de
+            ingresos.</p>
+          <div class="case-results">
+            <div data-i18n="cases.result_1"><strong>3</strong> <span>plataformas en una experiencia</span></div>
+            <div data-i18n="cases.result_2"><strong>Crecimiento</strong> <span>potencial de exposición e ingresos</span>
+            </div>
+          </div><a href="#contacto" class="button button-secondary" data-i18n="cases.button">Hablemos de tu proyecto
+            <span>→</span></a>
+        </div>
+        <div class="case-visual">
+          <div class="dashboard">
+            <div class="dashboard-header"><span data-i18n="cases.dashboard_header">Crecimiento digital</span><span
+                data-i18n="cases.dashboard_status">● Concepto</span></div>
+            <div class="chart-area"><small data-i18n="cases.chart_label">Potencial de crecimiento
+                ilustrativo</small><svg viewBox="0 0 500 200" preserveAspectRatio="none">
+                <path class="chart-fill"
+                  d="M0,165 C55,145 75,150 115,120 C165,80 185,130 225,92 C270,50 300,110 335,66 C390,0 420,58 500,15 V200 H0 Z" />
+                <path class="chart-line"
+                  d="M0,165 C55,145 75,150 115,120 C165,80 185,130 225,92 C270,50 300,110 335,66 C390,0 420,58 500,15" />
+              </svg>
+              <div class="chart-legend">
+                <span>ENE</span><span>FEB</span><span>MAR</span><span>ABR</span><span>MAY</span><span>JUN</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section contact-section" id="contacto">
+      <div class="contact-card glow-card reveal">
+        <div class="contact-content"><span class="section-label" data-i18n="contact.section_label">¿Tienes un
+            desafío?</span>
+          <h2 data-i18n="contact.title">Construyamos algo <span class="gradient-text">increíble.</span></h2>
+          <p data-i18n="contact.description">Cuéntanos sobre tu proyecto y te responderemos con ideas concretas para
+            llevarlo al siguiente nivel.</p>
+          <div class="contact-details"><a href="mailto:psideralis@gmail.com">psideralis@gmail.com</a></div>
+        </div>
+        <form class="contact-form" id="contactForm"><label><span data-i18n="contact.form.name_label">Nombre</span><input
+              name="name" required placeholder="Tu nombre"
+              data-i18n-placeholder="contact.form.name_placeholder" /></label><label><span
+              data-i18n="contact.form.email_label">Correo electrónico</span><input type="email" name="email" required
+              placeholder="tu@empresa.com" data-i18n-placeholder="contact.form.email_placeholder" /></label><label><span
+              data-i18n="contact.form.message_label">Cuéntanos sobre tu proyecto</span><textarea name="message" rows="4"
+              required placeholder="¿Qué necesitas construir?"
+              data-i18n-placeholder="contact.form.message_placeholder"></textarea></label><button
+            class="button button-primary" type="submit" data-i18n="contact.form.submit_button">Enviar mensaje
+            <span>→</span></button>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <main id="storeView" hidden aria-live="polite"></main>
+  <footer class="site-footer"><a href="/" data-route="home" class="logo"><span
+        class="logo-symbol"><i></i><i></i><i></i></span><span>Psi<span>deralis</span></span></a>
+    <p data-i18n="footer.copyright">© 2026 Psideralis. Todos los derechos reservados.</p>
+    <div class="footer-links"><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">GitHub</a></div>
+  </footer>
+</body>
+
+</html>
