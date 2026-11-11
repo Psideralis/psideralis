@@ -1,4 +1,2 @@
 node_modules/
-public/
-.env
 npm-debug.log*

@@ -3,7 +3,9 @@ const webpack = require('webpack');
 const dotenv = require('dotenv');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-dotenv.config();
+// Formspree IDs are injected when Webpack builds the browser bundle.
+// GitHub Actions writes the same values to .env before this command runs.
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 const envConfig = {
   FORMSPREE_FORM_ID: process.env.FORMSPREE_FORM_ID || '',

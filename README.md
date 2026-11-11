@@ -18,14 +18,20 @@ FORMSPREE_VISIT_FORM_ID=identificador_del_formulario_de_visitas
 
 Los identificadores de Formspree son públicos al estar incluidos en el bundle; no añadas secretos a estas variables.
 
-Para GitHub Pages, crea las mismas tres variables en **Settings → Environments → github-pages → Environment variables**. El workflow las inyecta al compilar y publica `public/` al hacer `push` a `main`.
+El archivo `.env` se versiona porque contiene únicamente IDs públicos de Formspree. GitHub Actions lo obtiene con el repositorio, Webpack lo importa durante el build y publica `public/` al hacer `push` a `main`. No añadas claves privadas, tokens ni contraseñas a este archivo. En **Settings → Pages**, selecciona **GitHub Actions** como fuente de publicación.
 
 ## Desarrollo local
 
 ```bash
 npm ci
+npm run dev       # Webpack en modo desarrollo + node server.js
+```
+
+Para generar el mismo artefacto estático que usa GitHub Pages:
+
+```bash
 npm run build
 npm start
 ```
 
-El servidor Node solo entrega el sitio estático. Los envíos van directamente y por HTTPS a Formspree.
+`node server.js` solo entrega el sitio estático en desarrollo o en un hosting Node; GitHub Pages no ejecuta procesos Node. El directorio `public/` se conserva en el repositorio como artefacto publicado. Los envíos van directamente y por HTTPS a Formspree.
