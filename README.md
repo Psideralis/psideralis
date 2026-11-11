@@ -1,3 +1,3 @@
 # Psideralis Website
 
-Este es la sitio web de Psideralis.
+Este es el sitio web de Psideralis.
