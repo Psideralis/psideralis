@@ -13,9 +13,11 @@ permissions:
 concurrency:
   group: pages
   cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: github-pages
 
     steps:
       - name: Checkout
@@ -32,6 +34,11 @@ jobs:
 
       - name: Build webpack app
         run: npm run build
+        env:
+          # These values are public after the static bundle is published.
+          FORMSPREE_FORM_ID: ${{ vars.FORMSPREE_FORM_ID }}
+          FORMSPREE_QUOTE_FORM_ID: ${{ vars.FORMSPREE_QUOTE_FORM_ID }}
+          FORMSPREE_VISIT_FORM_ID: ${{ vars.FORMSPREE_VISIT_FORM_ID }}
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
